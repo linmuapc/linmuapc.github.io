@@ -1,11 +1,199 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>林木亚普的主页</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>淋沐资源中心 | 科技霓虹风</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Microsoft YaHei, sans-serif;
+}
+
+body {
+    background-color: #050714;
+    color: #fff;
+    overflow-x: hidden;
+}
+
+/* 顶部导航 磨砂玻璃 */
+header {
+    background: rgba(15, 20, 40, 0.65);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(120, 140, 255, 0.15);
+    padding: 16px 8%;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.nav-wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 900;
+    background: linear-gradient(90deg, #00d8ff, #7b61ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    letter-spacing: 2px;
+}
+
+.nav-menu a {
+    color: #b0c4de;
+    text-decoration: none;
+    margin-left: 35px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #00d8ff;
+    text-shadow: 0 0 10px #00d8ff;
+}
+
+/* 头部横幅区块 */
+.banner {
+    height: 320px;
+    background: linear-gradient(135deg, #0a1029, #101a40, #0b1330);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.banner h1 {
+    font-size: 50px;
+    background: linear-gradient(90deg, #00e5ff, #a855ff);
+    -webkit-background-clip: text;
+    color: transparent;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    color: #94a3b8;
+    font-size: 17px;
+}
+
+/* 主容器 */
+.main {
+    padding: 60px 8%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 30px;
+    border-left: 4px solid #7b61ff;
+    padding-left: 15px;
+    color: #e2e8f0;
+}
+
+/* 卡片布局 仿START官网宽卡 */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: linear-gradient(145deg, #0f1630, #151e3d);
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid rgba(120, 150, 255, 0.12);
+    transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.card:hover {
+    transform: translateY(-12px) scale(1.02);
+    border-color: #7b61ff;
+    box-shadow: 0 10px 40px rgba(123, 97, 255, 0.25);
+}
+
+.card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+    color: #f0f4ff;
+}
+
+.card .desc {
+    color: #8892b0;
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+.card .btn {
+    display: inline-block;
+    padding: 11px 28px;
+    background: linear-gradient(90deg, #7b61ff, #00d8ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.card .btn:hover {
+    box-shadow: 0 0 20px #7b61ff;
+}
+</style>
 </head>
 <body>
-    <h1>欢迎来到我的 GitHub Pages 网站！</h1>
-    <p>网站部署成功啦！🎉</p>
+
+<header>
+    <div class="nav-wrap">
+        <div class="logo">STAR RESOURCE</div>
+        <div class="nav-menu">
+            <a href="#">首页</a>
+            <a href="#">Steam工具</a>
+            <a href="#">MC资源</a>
+            <a href="#">Python资源</a>
+            <a href="#">系统工具</a>
+        </div>
+    </div>
+</header>
+
+<div class="banner">
+    <h1>淋沐资源中心</h1>
+    <p>Steam工具 · MC资源 · Python编程 · 系统工具箱</p>
+</div>
+
+<div class="main">
+    <h2 class="section-title">💻 工具资源区</h2>
+    <div class="card-list">
+        <div class="card">
+            <h3>Steam 工具箱</h3>
+            <div class="desc">入库工具、MOD资源、Steam辅助合集</div>
+            <a href="#" class="btn">前往下载</a>
+        </div>
+
+        <div class="card">
+            <h3>WinToGo 工具</h3>
+            <div class="desc">便携系统制作工具、镜像资源全套</div>
+            <a href="#" class="btn">前往下载</a>
+        </div>
+
+        <div class="card">
+            <h3>Minecraft 资源</h3>
+            <div class="desc">MC客户端、模组、光影、整合包大全</div>
+            <a href="#" class="btn">前往下载</a>
+        </div>
+
+        <div class="card">
+            <h3>Python 资源</h3>
+            <div class="desc">Python安装包、源码、库插件、学习资料</div>
+            <a href="#" class="btn">前往下载</a>
+        </div>
+    </div>
+</div>
+
 </body>
 </html>
